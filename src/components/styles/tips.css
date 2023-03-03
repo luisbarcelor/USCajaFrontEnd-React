@@ -1,0 +1,243 @@
+#main {
+    height: auto;
+    width: 100%;
+    padding-bottom: 0;
+    margin-top: 4.5rem;
+    /*background-color: red;*/
+}
+
+.innertextdiv {
+    background-color: #fcba03;
+    border-radius: 20px;
+    padding: 3%;
+    height: fit-content;
+}
+
+.sticky {
+    display: flex;
+    margin-top: 5%;
+    color: gainsboro;
+    width: 100%;
+    height: fit-content;
+    border: 2px dashed #fcba03;
+    border-radius: 10px;
+}
+
+.sticky img {
+    width: 3%;
+    height: fit-content;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.sticky div {
+    margin-top: 1%;
+}
+
+.sticky p {
+    /*background-color: #E03F3F;*/
+    padding: 1%;
+    margin: 0;
+}
+
+.sticky-item {
+    margin-left: 1%;
+}
+
+/*THIRD CONTAINER*/
+
+#thirdcont {
+    height: auto;
+    width: 100%;
+    /*background-color: aqua;*/
+    padding: 3.5%;
+}
+
+#thirdcont-1 {
+    display: flex;
+    background-color: #242424;
+    padding: 3%;
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+    color: #111111;
+}
+
+#thirdcont-wrapper-1 {
+    width: 60%;
+    padding-right: 3%;
+}
+
+#accordion-title {
+    background-color: #E03F3F;
+    padding: 1.5%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+#accordion-title h3 {
+    display: block;
+    background-color: #242424;
+    padding: 2%;
+    color: gainsboro;
+    margin: 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#thirdcont-accordion {
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #E03F3F;
+    border: 3px solid #fcba03;
+    transition: 0.3s;
+}
+
+#thirdcont-accordion:focus-within {
+    box-shadow: 0 0 10px 3px #fcba03;
+}
+
+#thirdcont-accordion:hover {
+    box-shadow: 0 0 10px 3px #fcba03;
+}
+
+.accordion-item {
+    background-color: #fcba03;
+    border-bottom: rgba(36, 36, 36, 0.13);
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+.accordion-button {
+    background-color: #fcba03;
+    font-weight: bold;
+    color: #111111;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #242424;
+    color: #fcba03;
+}
+
+.accordion-button:not(.collapsed):hover {
+    background-color: #323232;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fcba03'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:focus {
+    background-color: #242424;
+    color: #fcba03;
+    box-shadow: none;
+}
+
+.accordion-button:focus:hover {
+    background-color: #323232;
+}
+
+.collapsed:focus {
+    background-color: #fcba03;
+    color: #111111;
+    box-shadow: none;
+}
+
+.collapsed:focus:hover {
+    background-color: #F4BD42;
+}
+
+.accordion-button:hover {
+    background-color: #F4BD42;
+}
+
+.accordion-button:active {
+    background-color: gainsboro;
+    color: #323232;
+}
+
+.accordion-button:focus:active {
+    background-color: gainsboro;
+    color: #323232;
+}
+
+.accordion-button:active::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23323232'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-collapse {
+    background-color: #E03F3F;
+    border-width: 15px;
+}
+
+.accordion-body {
+    padding: 2%;
+    padding-bottom: 1%;
+}
+
+.accordion-body p {
+    background-color: #242424;
+    padding: 2%;
+    color: gainsboro;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#sticky-3 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#div-boton-sticky {
+    display: flex;
+    justify-content: center;
+    /*background-color: red;*/
+}
+
+.boton-sticky {
+    background-color: #fcba03;
+    color: #111111;
+    width: 40%;
+    border-color: #fcba03;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.boton-sticky:hover {
+    background-color: #323232;
+    color: #fcba03;
+    border-color: #fcba03;
+}
+
+#thirdcont-wrapper-2 {
+    /*background-color: #E03F3F;*/
+    padding-left: 3%;
+    width: 55%;
+}
+
+#thirdcont-2 {
+    background-color: #fcba03;
+    padding: 4%;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#thirdcont-2 p {
+    margin: 0;
+}
+
+#thirdcont-figure {
+    padding: 10%;
+    padding-bottom: 0;
+}
+
+#author {
+    margin-top: 0.1%;
+}
+
+/*THIRD CONTAINER END*/

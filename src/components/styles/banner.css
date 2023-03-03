@@ -1,0 +1,19 @@
+/*BANNER*/
+
+#banner {
+    /*background-color: red;*/
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 3.5%;
+}
+
+#banner:hover {
+    opacity: 0.9;
+}
+
+#banner:active {
+    opacity: 0.7;
+}
+
+/*BANNER END*/

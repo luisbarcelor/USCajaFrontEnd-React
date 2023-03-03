@@ -1,0 +1,24 @@
+#main {
+    height: auto;
+    width: 100%;
+    margin-top: 4.5rem;
+    /*background-color: red;*/
+}
+
+#container {
+    padding: 5%;
+    margin: 3.5%;
+    border-radius: 20px;
+    background-color: #242424;
+    margin-top: 7%;
+}
+
+#innerContainer {
+    border-radius: 20px;
+    padding: 2.5%;
+    background-color: #fcba03;
+}
+
+#table {
+    border-color: #242424;
+}

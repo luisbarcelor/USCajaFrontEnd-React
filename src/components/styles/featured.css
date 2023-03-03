@@ -1,0 +1,291 @@
+#main {
+    height: auto;
+    width: 100%;
+    padding-bottom: 3%;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    /*background-color: red;*/
+}
+
+.innertextdiv {
+    background-color: #fcba03;
+    border-radius: 20px;
+    padding: 3%;
+    height: fit-content;
+}
+
+.sticky {
+    display: flex;
+    margin-top: 5%;
+    color: gainsboro;
+    width: 100%;
+    height: fit-content;
+    border: 2px dashed #fcba03;
+    border-radius: 10px;
+}
+
+.sticky img {
+    width: 3%;
+    height: fit-content;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.sticky div {
+    margin-top: 1%;
+}
+
+.sticky p {
+    /*background-color: #E03F3F;*/
+    padding: 1%;
+    margin: 0;
+}
+
+.sticky-item {
+    margin-left: 1%;
+}
+
+/*SECOND CONTAINER*/
+
+#secondcont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /*background-color: green;*/
+}
+
+#secondcont-1 {
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    width: 93%;
+    height: 100%;
+    background-color: #242424;
+    border-radius: 20px;
+    padding: 3%;
+    margin-top: 3.5%;
+}
+
+#text-vid-container {
+    width: 50%;
+    /*background-color: red;*/
+}
+#sctext {
+    width: 100%;
+    color: #111111;
+}
+
+#titulo-video {
+    background-color: #E03F3F;
+    margin-top: 10%;
+    padding: 1.5%;
+    border-radius: 20px;
+}
+
+#titulo-video h3 {
+    display: block;
+    background-color: #242424;
+    padding: 2%;
+    color: gainsboro;
+    margin: 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#div-video {
+    position: relative;
+    margin-top: 5%;
+    height: 0;
+    border-radius: 20px;
+    padding-bottom: 56.21%;
+    overflow: hidden;
+}
+
+#div-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#sticky-2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#div-newsletter {
+    display: flex;
+    justify-content: center;
+    /*background-color: red;*/
+    color: gainsboro;
+    margin-top: 3%;
+    width: 100%;
+}
+
+#formulario-1 {
+    padding: 3%;
+    border-radius: 20px;
+    background-color: #E03F3F;
+    width: 75%;
+    transition: 0.3s;
+}
+
+#formulario-1:hover {
+    box-shadow: 0 0 10px 3px #fcba03;
+}
+
+#label {
+    background-color: #242424;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+#label h4 {
+    margin: 0;
+}
+
+#campo-1 {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 1.5%;
+    border-radius: 20px;
+    border-style: none;
+    color: #242424;
+}
+
+#campo-1:focus {
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: #fcba03;
+}
+
+#submit {
+    background-color: #fcba03;
+    color: #111111;
+    border-color: #fcba03;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    background-color: #323232;
+    color: #fcba03;
+    border-color: #fcba03;
+}
+
+#divcards {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin-left: 5%;
+    /*background-color: red;*/
+}
+
+#divcards #cards-row-1 {
+    margin-bottom: 10%;
+    /*background-color: blue;*/
+    display: flex;
+}
+
+#divcards #cards-row-2 {
+    /*background-color: pink;*/
+    display: flex;
+}
+
+.card {
+    width: 20rem;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: #E03F3F;
+    background-color: #E03F3F;
+    color: gainsboro;
+    transition: 0.3s;
+    border: 3px solid #fcba03;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 3px #fcba03;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+#card-1, #card-3 {
+    margin-right: 10%;
+    margin-left: auto;
+}
+#card-2, #card-4 {
+    margin-right: auto;
+}
+
+#card-2 img {
+    background-color: #F4BD42;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.card-title {
+    padding: 5%;
+    background-color: #242424;
+    border-radius: 15px;
+}
+
+.card-text {
+    background-color: #242424;
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.cardbotones {
+    background-color: #fcba03;
+    color: #111111;
+    border-color: #fcba03;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.cardbotones:hover {
+    background-color: #323232;
+    color: #fcba03;
+    border-color: #fcba03;
+}
+
+.btn:active {
+    transition: 0.2s;
+    margin-left: 15px;
+}
+
+.btn:active:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #323232;
+    color: #fcba03;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #fcba03;
+    color: #242424;
+    border-color: #fcba03;
+}
+
+.btn:focus:hover {
+    background-color: #323232;
+    color: #fcba03;
+    border-color: #fcba03;
+}
+
+/*SECOND CONTAINER END*/
