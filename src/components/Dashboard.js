@@ -5,7 +5,7 @@ import "./styles/dashboard.css"
 
 function Dashboard() {
     let dni = localStorage.getItem("dni").toString()
-    const urlApi = "http://localhost:8080/api"
+    const urlApi = "http://ec2-35-181-43-92.eu-west-3.compute.amazonaws.com:8080/api"
 
     const [updated, setUpdated] = useState(false)
     const [message, setMessage] = useState("")

@@ -14,7 +14,7 @@ function SignUp() {
     const [address, setAddress] = useState("")
     const [email, setEmail] = useState("")
 
-    const urlApi = "http://localhost:8080/api"
+    const urlApi = "http://ec2-35-181-43-92.eu-west-3.compute.amazonaws.com:8080/api"
 
     const signUp = async (event) => {
         event.preventDefault();

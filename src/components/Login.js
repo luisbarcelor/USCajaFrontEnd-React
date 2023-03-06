@@ -3,7 +3,7 @@ import "./styles/login.css"
 import {Link} from "react-router-dom";
 
 function Login() {
-    // localStorage.setItem("isAuth", "false")
+    localStorage.setItem("isAuth", "false")
     const [dni, setDni] = useState("")
     const handleOnClick = () => {
         localStorage.setItem("isAuth", "true")
