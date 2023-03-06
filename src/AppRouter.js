@@ -1,20 +1,37 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import {BrowserRouter as Router, Navigate, Route, Routes} from "react-router-dom"
 import NotFound from "./components/NotFound";
 import Dashboard from "./components/Dashboard";
-import NavBar from "./components/NavBar";
+import Login from "./components/Login";
+import PersonalInfo from "./components/PersonalInfo";
+import BankOperations from "./components/BankOperations";
+import {useEffect, useState} from "react";
+import SignUp from "./components/SignUp";
+import Admin from "./components/Admin";
 
-function AppRouter() {
+export function AppRouter() {
+    const [local, setLocal] = useState("")
+
+    const [isAuthenticated, setIsAuthenticated] = useState(false)
+
+    useEffect(() => {
+        if (localStorage.getItem("isAuth").toString() === "true") {
+            setIsAuthenticated(true)
+        } else {
+            setLocal(local + "l")
+        }
+    },[local])
+
     return (
         <Router>
-            <NavBar></NavBar>
             <Routes>
-                <Route index element={<Dashboard />}></Route>
-                <Route path="/nav" element={<NavBar />}></Route>
-                <Route path="*" element={<NotFound />}></Route>
+                <Route path="/login" element={<Login />} />
+                <Route path="/sign-up" element={<SignUp />} />
+                <Route index element={isAuthenticated ? (<Dashboard />) : (<Navigate to="/login" replace />)} />
+                <Route path="/personal-info" element={isAuthenticated ? (<PersonalInfo />) : (<Navigate to="/login" replace />)} />
+                <Route path="/bank-operations" element={isAuthenticated ? (<BankOperations />) : (<Navigate to="/login" replace />)} />
+                <Route path="/admin" element={isAuthenticated ? (<Admin />) : (<Navigate to="/login" replace />)} />
+                <Route path="*" element={isAuthenticated ? (<NotFound />) : (<Navigate to="/login" replace />)} />
             </Routes>
         </Router>
     );
 }
-
-export default AppRouter;

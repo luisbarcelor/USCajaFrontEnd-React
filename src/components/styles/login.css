@@ -1,0 +1,27 @@
+#mainLogin {
+    height: auto;
+    width: 100%;
+    margin-top: 4.5rem;
+    /*background-color: red;*/
+}
+
+#containerLogin {
+    padding: 2%;
+    margin: 35%;
+    border-radius: 20px;
+    background-color: #242424;
+    margin-top: 10%;
+}
+
+#innerContainerLogin {
+    border-radius: 20px;
+    padding: 7%;
+    background-color: #fcba03;
+}
+
+.buttons-divLogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
